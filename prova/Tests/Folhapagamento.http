@@ -1,0 +1,26 @@
+### Listar os funcionários
+GET https://localhost:5001/api/folha/listar
+
+### Cadastrar um funcionário
+POST https://localhost:5001/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "folhaid" : "1",
+    "valorhora" : "50",
+    "quantidadedehoras" : "100",
+    "salariobruto" : 5000,
+    "impostorenda" : 505.64,
+    "impostoinss" : 550.00,
+    "impostofgts" : 400,
+    "salarioliquido" : 3944.36,
+    "funcionario" : {
+         "funcionarioid" : 1,
+         "nome" : "Diogo Steinke Deconto",
+         "cpf" : "111.222.333-44",
+         "nascimento" : "01/01/2022",
+         "criadoem" : "01/10/2022"
+    }
+   
+
+}
